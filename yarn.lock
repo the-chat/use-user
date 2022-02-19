@@ -517,19 +517,19 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@the-chat/db@^1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@the-chat/db/1.0.1/a0b754b0132fe6ef18799d2622e68758d72d82520bdd2c8c5959eb02e60c2270#158e44b58facc3f998244e1ebd69c91494d368e7"
-  integrity sha512-uiDhcMbE87APZ4P+Uy0Rzk60oxfI/4whFUyuh/Hvgy1MmNrcGWwZCx93enHJJlr6UJCP1e219llwT3hqik2oiw==
+"@the-chat/db@^1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@the-chat/db/1.0.2/6a5d2d124a053b37a75252eb72f8cf6acdfa30cab6bee57a4ed72ca10612e5dd#c7d1c46435c28f6ca93cd21e69cb4df43ce8bcdd"
+  integrity sha512-Rgi+f/q7VxlCzjoCR1QD3KqpxNfpixC0uSDPm9KvM/qBbJkgMA0h/Y0C3FuRFDiP01qrMKMtjzaLOFS4a7Mz/A==
   dependencies:
-    "@the-chat/firebase" "^1.0.1"
+    "@the-chat/firebase" "^1.0.2"
     firebase "^9.6.7"
     react-firebase-hooks "^4.0.1"
 
-"@the-chat/firebase@^1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@the-chat/firebase/1.0.1/4f4c83744bfa4bac948b0e2d4a8e6110424abfb9d7bef20eebb1ec4f9e73bfcd#a6ebb4c286a71701362b2c3e90c6fd84541bfc94"
-  integrity sha512-bpP+kFNFr3h5o/SRQedTuEVb2/hN2QybnyGjxpURk5tgAOWYFfN9JZ7RIaTkAw/KtgJnogwdb8P4IcfIXb/5kA==
+"@the-chat/firebase@^1.0.2", "@the-chat/firebase@^1.0.3":
+  version "1.0.3"
+  resolved "https://npm.pkg.github.com/download/@the-chat/firebase/1.0.3/bc51aebb765d4685f6d399426486299af477e27ee4f886e98d8d751277069f8b#b55671497af55a5a4d90a525a116793d7d537324"
+  integrity sha512-ev0lGDKxmnJgHPLdbejyTacy91P9GviXmzwrzYOvStl/HbBsszA/gLC4EIKj8ZkLZvFfbmLCo5mNE3hwSOE6hQ==
   dependencies:
     firebase "^9.6.6"
     firebase-admin "^10.0.2"

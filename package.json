@@ -1,6 +1,6 @@
 {
   "name": "@the-chat/use-user",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -8,8 +8,8 @@
   "repository": "git://github.com/the-chat/use-user",
   "license": "MIT",
   "dependencies": {
-    "@the-chat/db": "^1.0.1",
-    "@the-chat/firebase": "^1.0.1",
+    "@the-chat/db": "^1.0.2",
+    "@the-chat/firebase": "^1.0.3",
     "@the-chat/gen-context": "^1.0.7",
     "@the-chat/types": "^1.0.4",
     "firebase": "^9.6.7",
