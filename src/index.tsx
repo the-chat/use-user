@@ -1,7 +1,6 @@
 import {useAuthState} from "react-firebase-hooks/auth"
 import React, {useEffect} from "react"
-import {auth} from "@the-chat/firebase"
-import {User} from "firebase/auth"
+import {Auth, User} from "firebase/auth"
 import {BaseUserData} from "@the-chat/types"
 import {useTranslation} from "next-i18next"
 import {useDocData} from "@the-chat/db"
@@ -24,8 +23,9 @@ type AllUserData<T extends BaseUserData> = [T, User, UserStatus, UserDataStatus]
 // todo?: default value
 // sets default UserData implementation across ENTIRE app (probably)
 const getUser = <T extends BaseUserData>(
-  useDefaultValueInProviderWrapper,
-  defaultValueInContext
+  auth: Auth,
+  useDefaultValueForDbDataInProviderWrapper: () => T,
+  defaultValueForDbDataInContext: T
 ) =>
   genContext<AllUserData<T>>(
     ({RealProvider, children}) => {
@@ -37,7 +37,7 @@ const getUser = <T extends BaseUserData>(
       // todo?: loading,error. AuthError?
       const [dbData, dbLoading, dbError] = useDocData<T>(
         "users/" + user?.uid,
-        useDefaultValueInProviderWrapper()
+        useDefaultValueForDbDataInProviderWrapper()
       )
 
       useEffect(() => {
@@ -53,7 +53,7 @@ const getUser = <T extends BaseUserData>(
       )
     },
     [
-      defaultValueInContext,
+      defaultValueForDbDataInContext,
       null,
       {loading: false, error: undefined},
       {
