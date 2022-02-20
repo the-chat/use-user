@@ -6,8 +6,6 @@ import {useTranslation} from "next-i18next"
 import {useDocData} from "@the-chat/db"
 import {FirestoreError} from "@firebase/firestore"
 import genContext from "@the-chat/gen-context"
-import {get} from "@the-chat/firebase"
-const {auth} = get()
 
 type UserStatus = {
   loading: boolean
@@ -25,6 +23,7 @@ type AllUserData<T extends BaseUserData> = [T, User, UserStatus, UserDataStatus]
 // todo?: default value
 // sets default UserData implementation across ENTIRE app (probably)
 const getUser = <T extends BaseUserData>(
+  auth: Auth,
   useDefaultValueForDbDataInProviderWrapper: () => T,
   defaultValueForDbDataInContext: T
 ) =>
