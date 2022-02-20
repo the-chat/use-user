@@ -1,6 +1,6 @@
 {
   "name": "@the-chat/use-user",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
