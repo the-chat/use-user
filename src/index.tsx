@@ -6,6 +6,8 @@ import {useTranslation} from "next-i18next"
 import {useDocData} from "@the-chat/db"
 import {FirestoreError} from "@firebase/firestore"
 import genContext from "@the-chat/gen-context"
+import {get} from "@the-chat/firebase"
+const {auth} = get()
 
 type UserStatus = {
   loading: boolean
@@ -23,12 +25,11 @@ type AllUserData<T extends BaseUserData> = [T, User, UserStatus, UserDataStatus]
 // todo?: default value
 // sets default UserData implementation across ENTIRE app (probably)
 const getUser = <T extends BaseUserData>(
-  auth: Auth,
   useDefaultValueForDbDataInProviderWrapper: () => T,
   defaultValueForDbDataInContext: T
 ) =>
-  genContext<AllUserData<T>>(
-    ({RealProvider, children}) => {
+  genContext<AllUserData<T>, {path: string}>(
+    ({RealProvider, path, children}) => {
       const {i18n} = useTranslation()
 
       const [user, loading, error] = useAuthState(auth)
@@ -36,7 +37,7 @@ const getUser = <T extends BaseUserData>(
       // todo??: when user loaded, first dbData can be default, becouse of it only starts watching and getting data at this moment
       // todo?: loading,error. AuthError?
       const [dbData, dbLoading, dbError] = useDocData<T>(
-        "users/" + user?.uid,
+        path + user?.uid,
         useDefaultValueForDbDataInProviderWrapper()
       )
 
