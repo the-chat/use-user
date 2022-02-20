@@ -7,9 +7,12 @@
   },
   "repository": "git://github.com/the-chat/use-user",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "@the-chat/db": "^1.0.3",
-    "@the-chat/firebase": "^1.0.3",
+    "@the-chat/db": "^1.0.4",
+    "@the-chat/firebase": "^1.1.0",
     "@the-chat/gen-context": "^1.0.8",
     "@the-chat/types": "^1.0.4",
     "firebase": "^9.6.7",
