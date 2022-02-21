@@ -441,31 +441,18 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@the-chat/db@^1.0.4":
-  version "1.0.4"
-  resolved "https://npm.pkg.github.com/download/@the-chat/db/1.0.4/412d54e9fe1b5d1acccfacd790ab2885c294214fd96e2209d4da43535cc5e910#094ed6cd9db2b6cb9787d180b8a3c6e6811b37b2"
-  integrity sha512-27+UIjanS1yUAga55dOf4K4h5a+/s0Lq7rZKmMkRjzLY02coCu2BIh+1Z9743sPSmJWv9Cc1hmJTd9W6W8Kz0g==
+"@the-chat/db@^1.0.5":
+  version "1.0.5"
+  resolved "https://npm.pkg.github.com/download/@the-chat/db/1.0.5/fa53359f28da4931f4d44cb0bc92e147efa8343731f19014e27dd63c4470d707#1674c2304eb05beecdfba5344a73b81eca798ff2"
+  integrity sha512-uO8xe2f38fFCb2rnYCs9+MpLpnpvfCbcG1qRnpa+ov+G4xOsdTMQxxDIym1K5DSCWGUSa3JNj08v16bYyckp2g==
   dependencies:
-    "@the-chat/firebase" "^1.1.0"
     firebase "^9.6.7"
     react-firebase-hooks "^4.0.1"
-
-"@the-chat/firebase@^1.1.0":
-  version "1.1.0"
-  resolved "https://npm.pkg.github.com/download/@the-chat/firebase/1.1.0/5fdd103bd494dfcd41968c591afcaab4660edf7d0181b4350b97d770a1599ab7#2f8a969874883625fa2691a27becfef76eade184"
-  integrity sha512-3t4b2/MwXxRcGQDUaALW1z5G4vPZiHHBG9bXURuAfPrx7jjOz4Uh+lYk7lyjJYLLzHAyCy+vqUuQinoEE522sQ==
-  dependencies:
-    "@the-chat/storage" "^1.0.1"
 
 "@the-chat/gen-context@^1.0.8":
   version "1.0.8"
   resolved "https://npm.pkg.github.com/download/@the-chat/gen-context/1.0.8/48b8c23afbc91d97bd7dffd9903742646f0aeded7967822f744a81fa85cef8d4#a891c9147c8d5fc532297851ddf036c82d4ee8b7"
   integrity sha512-VDmSWGI3skpV3Njrz9Tl10gUWmU3JvWsyLct7Hcq1PeLglPFiSdt5/mfnPoWBXJJYmdG5xpBZ1gnFfOYCNI0+A==
-
-"@the-chat/storage@^1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@the-chat/storage/1.0.1/46b3e11d59c8d485834b1c690c9a722536faa900e1e3c092641befd8df8978b9#c27b51f4680dc72ca071956d513c0d038a5bf39e"
-  integrity sha512-wrHcIXHAinQhqm4fbXlSiC0B/nbRtjU5Bss7nmXxFAxeaJPSbxCxFf+qOBTX1v6ljKnpiYPHxy8bCk2tphdhvA==
 
 "@the-chat/types@^1.0.4":
   version "1.0.4"

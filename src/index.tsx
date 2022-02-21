@@ -3,8 +3,8 @@ import React, {useEffect} from "react"
 import {Auth, User} from "firebase/auth"
 import {BaseUserData} from "@the-chat/types"
 import {useTranslation} from "next-i18next"
-import {useDocData} from "@the-chat/db"
-import {FirestoreError} from "@firebase/firestore"
+import get from "@the-chat/db"
+import {Firestore, FirestoreError} from "@firebase/firestore"
 import genContext from "@the-chat/gen-context"
 
 type UserStatus = {
@@ -23,11 +23,14 @@ type AllUserData<T extends BaseUserData> = [T, User, UserStatus, UserDataStatus]
 // todo?: default value
 // sets default UserData implementation across ENTIRE app (probably)
 const getUser = <T extends BaseUserData>(
+  db: Firestore,
   auth: Auth,
   useDefaultValueForDbDataInProviderWrapper: () => T,
   defaultValueForDbDataInContext: T
-) =>
-  genContext<AllUserData<T>, {path: string}>(
+) => {
+  const {useDocData} = get(db)
+
+  return genContext<AllUserData<T>, {path: string}>(
     ({RealProvider, path, children}) => {
       const {i18n} = useTranslation()
 
@@ -62,5 +65,6 @@ const getUser = <T extends BaseUserData>(
       },
     ]
   )
+}
 
 export default getUser
