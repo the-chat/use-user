@@ -17,8 +17,14 @@ type UserDataStatus = {
   dbError: FirestoreError | null
 }
 
-type AllUserData<T extends BaseUserData> = [T, User, UserStatus, UserDataStatus]
+export type AllUserData<T extends BaseUserData> = [
+  T,
+  User,
+  UserStatus,
+  UserDataStatus
+]
 
+// todo?: args to Provider
 // todo?: remove factory that was using for ts
 // todo?: default value
 // sets default UserData implementation across ENTIRE app (probably)
