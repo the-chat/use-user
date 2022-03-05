@@ -7,6 +7,9 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "prepublish": "rm -rf dist&&tsc"
+  },
   "dependencies": {
     "@the-chat/db": "^1.0.5",
     "@the-chat/gen-context": "^1.0.8",
