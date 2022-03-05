@@ -1,10 +1,10 @@
-import {useAuthState} from "react-firebase-hooks/auth"
-import React, {useEffect} from "react"
-import {Auth, User} from "firebase/auth"
-import {BaseUserData} from "@the-chat/types"
-import {useTranslation} from "next-i18next"
+import { useAuthState } from "react-firebase-hooks/auth"
+import React, { useEffect } from "react"
+import { Auth, User } from "firebase/auth"
+import { BaseUserData } from "@the-chat/types"
+import { useTranslation } from "next-i18next"
 import get from "@the-chat/db"
-import {Firestore, FirestoreError} from "@firebase/firestore"
+import { Firestore, FirestoreError } from "@firebase/firestore"
 import genContext from "@the-chat/gen-context"
 
 type UserStatus = {
@@ -34,11 +34,11 @@ const getUser = <T extends BaseUserData>(
   useDefaultValueForDbDataInProviderWrapper: () => T,
   defaultValueForDbDataInContext: T
 ) => {
-  const {useDocData} = get(db)
+  const { useDocData } = get(db)
 
-  return genContext<AllUserData<T>, {path: string}>(
-    ({RealProvider, path, children}) => {
-      const {i18n} = useTranslation()
+  return genContext<AllUserData<T>, { path: string }>(
+    ({ RealProvider, path, children }) => {
+      const { i18n } = useTranslation()
 
       const [user, loading, error] = useAuthState(auth)
 
@@ -55,7 +55,7 @@ const getUser = <T extends BaseUserData>(
 
       return (
         <RealProvider
-          value={[dbData, user, {loading, error}, {dbLoading, dbError}]}
+          value={[dbData, user, { loading, error }, { dbLoading, dbError }]}
         >
           {children}
         </RealProvider>
@@ -64,7 +64,7 @@ const getUser = <T extends BaseUserData>(
     [
       defaultValueForDbDataInContext,
       null,
-      {loading: false, error: undefined},
+      { loading: false, error: undefined },
       {
         dbLoading: false,
         dbError: null,
