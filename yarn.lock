@@ -441,23 +441,23 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@the-chat/db@^1.0.5":
-  version "1.0.5"
-  resolved "https://npm.pkg.github.com/download/@the-chat/db/1.0.5/fa53359f28da4931f4d44cb0bc92e147efa8343731f19014e27dd63c4470d707#1674c2304eb05beecdfba5344a73b81eca798ff2"
-  integrity sha512-uO8xe2f38fFCb2rnYCs9+MpLpnpvfCbcG1qRnpa+ov+G4xOsdTMQxxDIym1K5DSCWGUSa3JNj08v16bYyckp2g==
+"@the-chat/db@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.6.tgz#37f56e86441fc0c2ac9bf2a1a31b7d49112f8a6d"
+  integrity sha512-BFsrSIChC2awV0CXknNJhl1RYP5biqQtcVrBGY7UOPwJ8SwfEFnJwqm63vlAuF87uZEAhmpmOI+1ybtJCUNCfw==
   dependencies:
     firebase "^9.6.7"
     react-firebase-hooks "^4.0.1"
 
-"@the-chat/gen-context@^1.0.8":
-  version "1.0.8"
-  resolved "https://npm.pkg.github.com/download/@the-chat/gen-context/1.0.8/48b8c23afbc91d97bd7dffd9903742646f0aeded7967822f744a81fa85cef8d4#a891c9147c8d5fc532297851ddf036c82d4ee8b7"
-  integrity sha512-VDmSWGI3skpV3Njrz9Tl10gUWmU3JvWsyLct7Hcq1PeLglPFiSdt5/mfnPoWBXJJYmdG5xpBZ1gnFfOYCNI0+A==
+"@the-chat/gen-context@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.2.tgz#370814a29d8b0cbe85670ddd16af62fb517aae90"
+  integrity sha512-pHTMSSxLvfndr3Rp9EWQzpWpg5+n2VPlNzkLO4QgoNokNDCFcFDve89G1E3Tf1u9RVMliDIKI370PJqRsYm6Fw==
 
-"@the-chat/types@^1.0.4":
-  version "1.0.4"
-  resolved "https://npm.pkg.github.com/download/@the-chat/types/1.0.4/ff39d158d5f18e6a75c24ee076dee700fee8a35a72817db99235d8ab1dae83f5#c8c42dc6ca477cc4b406cb2bf7ebe7e7f580bf80"
-  integrity sha512-NIPOKxHA37CkvLrughRfLlg/8AMVXKup/Teui+mOyeiDsGOP/bMdYJKS8qvyRoTRMR+f2NJdPDQQOzHWccIasA==
+"@the-chat/types@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@the-chat/types/-/types-1.0.6.tgz#1252ef8c4e084e46b04aacef44cf879b41a492e5"
+  integrity sha512-rAhFXhSZO3Co/tgfnhm/gs3ceW1pzEnHw2HecdAWdIKOU3vNH4TeEo1Gs0aLZy9Cy96bblK+elX+Q4Dq/ijSQQ==
 
 "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
