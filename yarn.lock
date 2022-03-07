@@ -725,10 +725,10 @@
     firebase "^9.6.7"
     react-firebase-hooks "^4.0.1"
 
-"@the-chat/gen-context@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.4.tgz#cdefd5a067afb99deae24a629a563edba21c3c4d"
-  integrity sha512-+8lgY+rvHItzvXyasfUupbouqEGGIlB/4uThA/iWl+dxlTIUf0qwgnYOR3F0RehKZN23mINKxmKZkOhUDpc8dA==
+"@the-chat/gen-context@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.5.tgz#cde66cc145ec6bdcf987cda637489ea598c5efdc"
+  integrity sha512-bSJKsGeaDKhrs6mf5911QZ7oNDK7YDTYHnK2jL6Jb2WBbCSrAwyl7E/CY6lTR10B2ipWHFRj1PSsZbR7Znvu1w==
 
 "@the-chat/types@^1.0.6":
   version "1.0.6"
