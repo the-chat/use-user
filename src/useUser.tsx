@@ -1,11 +1,19 @@
 import { useAuthState } from "react-firebase-hooks/auth"
 import React, { useEffect } from "react"
 import { Auth, User } from "firebase/auth"
-import { BaseUserData } from "@the-chat/types"
 import { useTranslation } from "next-i18next"
 import get from "@the-chat/db"
 import { Firestore, FirestoreError } from "@firebase/firestore"
 import genContext from "@the-chat/gen-context"
+
+// todo?:
+// lang: "en" | "ru"
+export type BaseUserData = Pick<
+  User,
+  "uid" | "displayName" | "email" | "photoURL" | "phoneNumber"
+> & {
+  lang: string
+}
 
 type UserStatus = {
   loading: boolean
@@ -24,10 +32,7 @@ export type AllUserData<T extends BaseUserData> = [
   UserDataStatus
 ]
 
-// todo?: args to Provider
-// todo?: remove factory that was using for ts
 // todo?: default value
-// sets default UserData implementation across ENTIRE app (probably)
 
 type DefaultAllUserData = AllUserData<BaseUserData>
 
