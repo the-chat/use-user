@@ -717,10 +717,10 @@
     "@mui/styles" "^5.4.1"
     notistack "^2.0.3"
 
-"@the-chat/db@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.6.tgz#37f56e86441fc0c2ac9bf2a1a31b7d49112f8a6d"
-  integrity sha512-BFsrSIChC2awV0CXknNJhl1RYP5biqQtcVrBGY7UOPwJ8SwfEFnJwqm63vlAuF87uZEAhmpmOI+1ybtJCUNCfw==
+"@the-chat/db@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.7.tgz#8df10b22043bca1c2403d57f062f787f824d872f"
+  integrity sha512-/oQ2clZ9uLqZaiftjkkULWlzZp3yriyEy3eKkezNodoetS5RvEx5dlWp7kP9ti7poU5XPySrrd9BYK9uzVMo9w==
   dependencies:
     firebase "^9.6.7"
     react-firebase-hooks "^4.0.1"
@@ -730,10 +730,10 @@
   resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.5.tgz#cde66cc145ec6bdcf987cda637489ea598c5efdc"
   integrity sha512-bSJKsGeaDKhrs6mf5911QZ7oNDK7YDTYHnK2jL6Jb2WBbCSrAwyl7E/CY6lTR10B2ipWHFRj1PSsZbR7Znvu1w==
 
-"@the-chat/types@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@the-chat/types/-/types-1.0.6.tgz#1252ef8c4e084e46b04aacef44cf879b41a492e5"
-  integrity sha512-rAhFXhSZO3Co/tgfnhm/gs3ceW1pzEnHw2HecdAWdIKOU3vNH4TeEo1Gs0aLZy9Cy96bblK+elX+Q4Dq/ijSQQ==
+"@the-chat/types@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@the-chat/types/-/types-1.0.7.tgz#be0dc1e6104d76d6160a52a85f9e31e86072b0c8"
+  integrity sha512-rsat/zaUwukk7ZY6XYCCTTBHaqTJwV/11wbZvFlfynwmgKMQMLTf4SvfOpwVI2Plj7MPHpMu3/4GvbOWAWj22g==
 
 "@the-chat/use-logs@^1.1.1":
   version "1.1.1"
