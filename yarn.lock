@@ -717,28 +717,28 @@
     "@mui/styles" "^5.4.1"
     notistack "^2.0.3"
 
-"@the-chat/db@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.7.tgz#8df10b22043bca1c2403d57f062f787f824d872f"
-  integrity sha512-/oQ2clZ9uLqZaiftjkkULWlzZp3yriyEy3eKkezNodoetS5RvEx5dlWp7kP9ti7poU5XPySrrd9BYK9uzVMo9w==
+"@the-chat/db@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@the-chat/db/-/db-1.0.9.tgz#312e08e8c8bb9bfb313291567a1b947dbf2a91d8"
+  integrity sha512-y3wf8T2MwGkXY/+R9BEg5EdPEsnUc1iDlwk6GnTr+WS81ah9blzdZkHM1xyLGwC6hSxpQYMY4moMLen9OO341g==
   dependencies:
     firebase "^9.6.7"
     react-firebase-hooks "^4.0.1"
 
-"@the-chat/gen-context@^1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.5.tgz#cde66cc145ec6bdcf987cda637489ea598c5efdc"
-  integrity sha512-bSJKsGeaDKhrs6mf5911QZ7oNDK7YDTYHnK2jL6Jb2WBbCSrAwyl7E/CY6lTR10B2ipWHFRj1PSsZbR7Znvu1w==
+"@the-chat/gen-context@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.6.tgz#de06d0257276326825fdc040e19a24982f11f37b"
+  integrity sha512-30CxDcHkyyj/zGDs2FUeZ6fF7aZgNjInplDvsi8LDB1Xs0BEPTpeC/fFyvubWer1gpbkAMkkZ/waSxpbMBD9BA==
 
 "@the-chat/types@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@the-chat/types/-/types-1.0.7.tgz#be0dc1e6104d76d6160a52a85f9e31e86072b0c8"
   integrity sha512-rsat/zaUwukk7ZY6XYCCTTBHaqTJwV/11wbZvFlfynwmgKMQMLTf4SvfOpwVI2Plj7MPHpMu3/4GvbOWAWj22g==
 
-"@the-chat/use-logs@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@the-chat/use-logs/-/use-logs-1.1.1.tgz#2392acf15e88d6f98c73fb75d6581ada5a450ede"
-  integrity sha512-1E0tCCt0enDAQe1ACOzXFkhQi0VuCgTRirWE1XKWXWHbGV4ll+yUY8BnJhWX9GxtMcXJn9eBptB+mmeXFP7hog==
+"@the-chat/use-logs@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@the-chat/use-logs/-/use-logs-1.1.2.tgz#349119ef2112b2ee436b189f569fe22594021e68"
+  integrity sha512-twbIhCsP0mQwTNex5vHBFIKEgV33C524aqnONTBAhSmgdrfOb1H5SZfI2uHBu1g0IBidUdJ/SJLm4r6vFz1E/w==
   dependencies:
     "@the-chat/alert" "^1.1.1"
     next-i18next "^10.4.0"
