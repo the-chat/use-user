@@ -1,5 +1,5 @@
 import { useAuthState } from "react-firebase-hooks/auth"
-import React, { useEffect } from "react"
+import { useEffect } from "react"
 import { Auth, User } from "firebase/auth"
 import { useTranslation } from "next-i18next"
 import get from "@the-chat/db"

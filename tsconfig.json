@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   }
 }
