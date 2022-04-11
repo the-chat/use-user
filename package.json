@@ -1,6 +1,6 @@
 {
   "name": "@the-chat/use-user",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "dist/index.js",
   "repository": "git://github.com/the-chat/use-user",
   "license": "MIT",
@@ -13,7 +13,6 @@
   "dependencies": {
     "@the-chat/db": "^1.0.9",
     "@the-chat/gen-context": "^1.1.7",
-    "@the-chat/types": "^1.0.8",
     "@the-chat/use-logs": "^1.1.4",
     "firebase": "^9.6.7",
     "next-i18next": "^10.3.0",
@@ -21,6 +20,7 @@
     "react-firebase-hooks": "4.0.1"
   },
   "devDependencies": {
+    "@the-chat/types": "^1.0.9",
     "notistack": "^2.0.3"
   }
 }
