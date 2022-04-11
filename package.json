@@ -1,6 +1,6 @@
 {
   "name": "@the-chat/use-user",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/index.js",
   "repository": "git://github.com/the-chat/use-user",
   "license": "MIT",
