@@ -8,7 +8,7 @@ const useSignOut = (
   successMessage: SnackbarMessage,
   errorMessage: string
 ) => {
-  const [waiting, setWaiting] = useState()
+  const [waiting, setWaiting] = useState<boolean>()
   const { handleSuccess, handleError } = useLogs(setWaiting)
 
   return {
