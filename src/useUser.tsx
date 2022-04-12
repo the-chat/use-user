@@ -2,12 +2,11 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import { useEffect } from "react"
 import { Auth, User } from "firebase/auth"
 import { useTranslation } from "next-i18next"
-import get from "@the-chat/db"
-import { Firestore, FirestoreError } from "@firebase/firestore"
+import getDb from "@the-chat/db"
+import { FirestoreError } from "@firebase/firestore"
 import genContext from "@the-chat/gen-context"
 
-// todo?:
-// lang: "en" | "ru"
+// todo?: lang: "en" | "ru"
 export type BaseUserData = Pick<
   User,
   "uid" | "displayName" | "email" | "photoURL" | "phoneNumber"
@@ -22,7 +21,7 @@ type UserStatus = {
 
 type UserDataStatus = {
   dbLoading: boolean
-  dbError: FirestoreError | null
+  dbError: FirestoreError | undefined
 }
 
 export type AllUserData<T extends BaseUserData> = [
@@ -32,35 +31,27 @@ export type AllUserData<T extends BaseUserData> = [
   UserDataStatus
 ]
 
-// todo?: default value
-
 type DefaultAllUserData = AllUserData<BaseUserData>
 
 export type Props = {
   path: string
-  db: Firestore
   auth: Auth
+  useUserData: ReturnType<typeof getDb>["useDocData"]
   useDefaultValueForDbDataInProviderWrapper: () => BaseUserData
 }
 
 export const [useUser, UserProvider] = genContext<DefaultAllUserData, Props>(
   ({
-    db,
     auth,
     path,
     children,
+    useUserData,
     RealProvider,
     useDefaultValueForDbDataInProviderWrapper,
   }) => {
-    const { useDocData } = get(db)
-
     const { i18n } = useTranslation()
-
     const [user, loading, error] = useAuthState(auth)
-
-    // todo??: when user loaded, first dbData can be default, becouse of it only starts watching and getting data at this moment
-    // todo?: loading,error. AuthError?
-    const [dbData, dbLoading, dbError] = useDocData<BaseUserData>(
+    const [dbData, dbLoading, dbError] = useUserData<BaseUserData>(
       path + user?.uid,
       useDefaultValueForDbDataInProviderWrapper()
     )
